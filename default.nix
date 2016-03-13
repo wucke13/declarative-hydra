@@ -2,7 +2,7 @@
   jobsets = pkgs.runCommand "spec.json" {} ''
     cat > $out <<EOF
     {
-        "master" : {
+        "master": {
             "enabled": 1,
             "hidden": false,
             "description": "js",

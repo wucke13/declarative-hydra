@@ -11,6 +11,7 @@
             "checkinterval": 300,
             "schedulingshares": 100,
             "enableemail": false,
+            "emailoverride": "",
             "keepnr": 3,
             "inputs": {
                 "src": { "type": "git", "value": "git://github.com/shlevy/declarative-hydra-example.git", "emailresponsible": false },

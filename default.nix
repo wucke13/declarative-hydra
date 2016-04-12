@@ -1,4 +1,4 @@
-{ nixpkgs, declInput }: let pkgs = import nixpkgs {}; in {
+{ nixpkgs, declInput }: let pkgs = import nixpkgs {}; in if true then throw declInput else {
   jobsets = pkgs.runCommand "spec.json" {} ''
     echo ${builtins.toJSON declInput}
     cat > $out <<EOF

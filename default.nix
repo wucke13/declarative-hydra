@@ -36,7 +36,7 @@ let
 
   jobs = builtins.listToAttrs (builtins.map
     (flakeUrl: {
-      name = pkgs.lib.strings.replaceStrings [ "/" ] [ "|" ] flakeUrl;
+      name = pkgs.lib.strings.replaceStrings [ "/" ":" "?" ] [ " " " " " " ] flakeUrl;
       value = defaultFlakeJobset // { flake = flakeUrl; };
     })
     flakes);
